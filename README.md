@@ -8,10 +8,7 @@ brew install nginx
 
 2. Create and enter temporary folder to compile NGiNX and modules from source:
 ```
-mkdir ~/tmp-dir
-```
-```
-cd ~/tmp-dir
+mkdir ~/tmp-dir && cd ~/tmp-dir
 ```
 
 3. Download and unpack source code of NGiNX. It MUST be the same version as we got from the following command:
