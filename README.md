@@ -1,12 +1,12 @@
 # Install NGiNX module from source on Mac OSX
 
 1. Install NGiNX with [Homebrew](https://brew.sh):
+> If you already have your NGiNX installation, just skip this step.
 ```
 brew install nginx
 ```
-> If you already have your NGiNX installation, just skip this step.
 
-2. Create and enter temporary folder to compile NGiNX and modules from source:
+2. Create and enter a temporary folder to compile NGiNX and modules from source:
 ```
 mkdir ~/tmp-dir && cd ~/tmp-dir
 ```
@@ -36,7 +36,7 @@ tar xvzf tip.tar.gz && rm tip.tar.gz
 nginx -V
 ```
 
-6. Copy paste these flags and if are present, remove all `--add-dynamic-module` flags. These flags are used for adding additional modules. Because these modules are already compiled, we don't need to recompile them again.
+6. Copy-paste these flags and if are present, remove all `--add-dynamic-module` flags. These flags are used for adding additional modules. Because these modules are already compiled, we don't need to recompile them.
 
 7. Use updated flags and add to them new flag `--add-dynamic-module` that will point to our module. Finally (re)compile NGiNX with updated flags. It should look like this:
 ```
