@@ -51,10 +51,10 @@ sudo make modules
 
 8. Install compiled module:
 ```
-mkdir /opt/homebrew/etc/nginx/modules
+mkdir /opt/homebrew/Cellar/nginx/X.XX.X/modules
 ```
 ```
-cp objs/ngx_*.so /opt/homebrew/etc/nginx/modules
+cp objs/ngx_*.so /opt/homebrew/Cellar/nginx/X.XX.X/modules
 ```
 
 9. Now you should be able to load new module by adding the following command to your `nginx.conf` file:
