@@ -51,15 +51,14 @@ make modules
 
 8. Install compiled module:
 ```
-mkdir /usr/local/Cellar/nginx/X.XX.X/modules
+mkdir /opt/homebrew/Cellar/nginx/X.XX.X/modules
 ```
 ```
-cp objs/ngx_*.so /usr/local/Cellar/nginx/X.XX.X/modules
+cp objs/ngx_*.so /opt/homebrew/Cellar/nginx/X.XX.X/modules
 ```
 
 9. Now you should be able to load new module by adding the following command to your `nginx.conf` file:
 ```
 load_module modules/ngx_http_js_module.so;
 ```
-> File `nginx.conf` is located at `/usr/local/etc/nginx/nginx.conf`. Everytime you add/load new module reload NGiNX with `brew services reload nginx`.
-
+> File `nginx.conf` is located at `/opt/homebrew/etc/nginx/nginx.conf`. Everytime you add/load new module reload NGiNX with `brew services reload nginx`.
